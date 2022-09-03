@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasileirão</title>
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/splide.min.css">
+  <link rel="stylesheet" href="./assets/css/splide-core.min.css">
+</head>
+
+<body>
+  <img class="bg" src="./assets/imgs/bg.jpg" alt="Background">
+  <main class="main glass">
+    <header>
+      <h1>Brasileirão App</h1>
+    </header>
+    <section class="content">
+      <div class="highligth">
+        <div class="text">
+          <h3>
+            <img src="./assets/imgs/ball.png" alt="ball">
+            Futebol
+          </h3>
+          <h2>Hey, você sabia? O próximo jogo será o embate de
+            <span id="timeMandante"></span><span id="timeVisitante"></span>
+          </h2>
+        </div>
+      </div>
+      <article class="nextMatches">
+        <h2>Jogos da Semana</h2>
+        <section class="splide nextMatchesSlide" aria-label="nextMatches">
+          <div class="splide__track">
+            <ul class="splide__list">
+
+            </ul>
+          </div>
+        </section>
+      </article>
+      <article class="brasileirao glass">
+        <a href="#">Campeonato Brasileiro</a>
+        <header>
+          <button onclick="atualizarRodada(this)" id="prevRodada">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 40 40" width="40" height="40">
+              <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+            </svg>
+          </button>
+          <h2 id="rodadaAtual">Rodada Atual</h2>
+          <button onclick="atualizarRodada(this)" id="nextRodada">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 40 40" width="40" height="40">
+              <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+            </svg>
+        </header>
+        </div>
+        <section class="splide brasileiraoCarrossel" aria-label="Campeonato Brasileirão">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- brasileirao.js -->
+            </ul>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+  <script src="./assets/js/splide/splide.js"></script>
+  <script src="./assets/js/splide/splide.min.js"></script>
+  <script src="./assets/js/brasileirao.js"></script>
+  <script src="./assets/js/base.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

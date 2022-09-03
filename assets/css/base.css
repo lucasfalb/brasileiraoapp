@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-weight: normal;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  line-height: 1;
+  outline: 0px;
+  background: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Rajdhani", sans-serif;
+  cursor: url(../imgs/Soccer_Ball_Cursor.png), auto;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body > .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main {
+  width: 700px;
+  height: 90vh;
+  max-width: 90vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff6b;
+}
+.main header h1 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 42px;
+}
+.main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.main .content .highligth {
+  background-image: linear-gradient(to top, #373943, #8bc34a00);
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+.main .content .highligth .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 70%;
+}
+.main .content .highligth .text h3 {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  color: #232323;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+.main .content .highligth .text h3 > img {
+  width: 15px;
+  object-fit: cover;
+}
+.main .content .highligth:hover h3 > img {
+  transform: rotateZ(291deg);
+  transition: 5s linear;
+}
+.nextMatches {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 25px;
+}
+.nextMatches > h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #009523;
+  font-size: 30px;
+}
+.nextMatchesSlide {
+  width: 100%;
+  padding: 0 30px;
+}
+.nextMatchesSlide .splide__arrow {
+  width: 30px;
+  height: 30px;
+}
+.nextMatchesSlide .splide__pagination {
+  bottom: -33px;
+}
+.nextMatchesSlide .splide__arrow--prev {
+  left: 10px;
+}
+.nextMatchesSlide .splide__arrow--next {
+  right: 10px;
+}
+.nextMatchesSlide .splide__slide {
+  width: fit-content !important;
+  margin-right: 24px !important;
+}
+.nextMatches .info {
+  display: flex;
+  width: 170px;
+  min-width: 170px;
+  max-width: 170px;
+  height: 225px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  background-image: linear-gradient(to top, #002c28, #30421a);
+}
+.nextMatches .info > h3 {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 15px;
+  color: #232323;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+.nextMatches .info > span {
+  text-align: center;
+  font-size: 14px;
+}
+.nextMatches .brasoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nextMatches .brasoes > img {
+  max-width: 60px;
+  max-height: 60px;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.nextMatches .times {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nextMatches .times h2 {
+  font-weight: 800;
+  color: #fff;
+  font-size: 17px;
+}
+.brasileirao {
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 25px 40px 25px;
+}
+.brasileirao > a {
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-color: #009523;
+}
+.brasileirao > header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.brasileirao > header h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.brasileirao > header button {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+.fetch {
+  max-width: 200px;
+  margin: 0 auto;
+}
+.brasileirao > header button img {
+  height: 1.2em;
+  width: 1.2em;
+  opacity: 0.8;
+}
+.brasileiraoCarrossel {
+  width: 100%;
+  height: 100%;
+}
+#prevRodada svg {
+  transform: scaleX(-1);
+}
+.brasileirao > header button svg {
+  width: 20px;
+}
+.brasileiraoCarrossel .splide__arrows {
+  display: none;
+}
+.brasileiraoCarrossel .splide__track {
+  width: 100%;
+  height: 100%;
+  overflow: unset;
+}
+.brasileiraoCarrossel .splide__list {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+}
+.brasileiraoCarrossel .splide__pagination {
+  bottom: -25px;
+}
+.brasileiraoCarrossel .splide__pagination__page.is-active {
+  background: #009523;
+  border-color: #009523;
+  transform: scale(1);
+}
+.brasileiraoCarrossel .splide__pagination__page {
+  background: transparent;
+  border: 1px solid #c4c4c4;
+}
+.brasileiraoCarrossel .splide__arrow svg {
+  fill: #909090;
+  height: 1.2em;
+  width: 1.2em;
+}
+.brasileiraoCarrossel .splide__slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.brasileiraoCarrossel .splide__slide > h3 {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  gap: 5px;
+  color: #fff;
+  font-weight: 800;
+}
+.brasileiraoCarrossel .splide__slide > h3 span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffffdb;
+  font-weight: 600;
+}
+.ob-partidaInfo {
+  display: flex;
+  height: 85px;
+  max-height: 85px;
+  gap: 20px;
+  align-items: center;
+}
+.ob-partidaInfo img {
+  width: 100%;
+  max-width: 70px;
+}
+.ob-placar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.ob-placar span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+}
+.ob-placar h4 {
+  color: #fff;
+  font-size: 14px;
+}
+.ob-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ob-time span {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .brasileirao {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 700px) {
+  .brasileiraoCarrossel .splide__arrow--next {
+    right: 10%;
+  }
+  .brasileiraoCarrossel .splide__arrow--prev {
+    left: 10%;
+  }
+  .ob-placar {
+    gap: 7px;
+  }
+}
+@media (max-width: 400px) {
+  .ob-time {
+    gap: 0px;
+  }
+  .brasileirao > a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .brasileirao > header h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ob-partidaInfo img {
+    width: 100%;
+    max-width: 45px;
+  }
+}
+
+@media (max-width:450px){
+  .nextMatchesSlide {
+    padding: 0;
+}
+.nextMatches .info{
+  width: 100% !important;
+  max-width: unset !important;
+}
+.nextMatchesSlide .splide__slide {
+  width:100% !important;
+  margin-right: unset !important;
+}
+}
+.glass {
+  background: #2c2e3373;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgb(85 84 84 / 30%);
+}
+a {
+  cursor: url(../imgs/Goalkeeper_Glove_Pointer.png), auto;
+}
